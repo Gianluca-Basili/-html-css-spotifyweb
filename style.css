@@ -8,29 +8,32 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+
+
 .container-full{
     width: 100%;
+    height: calc(100vh - 200px);
    
 }
 
 .row{
     display: flex;
+    height: 100%;
+
 }
 
 .col-left{
     width: 225px;
-    height: 1000px;
+ 
     background-color: black;
    
 }
 
-.logo{
-    margin-top: 30px;
-}
+
 
 .col-right{
-    width: calc(100% + 225px);
-    height: 1000px;
+    width: calc(100% - 225px);
+    position: relative;
     background-color: rgba(20,25,34,255);
 }
 
@@ -40,54 +43,113 @@ body{
     width: 100%;
     height: 100px;
     background-color: rgba(8,11,18,255);
+    position: fixed;
+}
+
+.container-header{
+    width: 100%;
+    
+}
+
+.row-header{
+    width: 89%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.col-header{
+    width: 10%;
+    height: 50px;
+    background-color: red;
 }
 
 .container-bottom{
     width: 100%;
     height: 200px;
     background-color: rgba(40,40,40,255);
+    position: fixed;
     z-index: 100;
+    bottom: 0;
 }
 
 .main{
     width: 100%;
-    height: 300px;
+    height: 75vh;
     background-color:rgba(20,25,34,255) ;
+    position: absolute;
+    top: 100px;
+   
+
 }
+
+.container-songs{
+    height: 114px;
+    width: 100%;
+    background-color: blue;
+    margin-bottom: 160px;
+}
+   
+    
 
 .row-songs{
     display: flex;
+    position: absolute;
+    height: 99px;
+    width: 100%;
+    background-color: yellow;
+    top: 0;
 }
 
 .col-songs{
-    width: calc(100% / 6);
+    width: calc(100% / 6 - 20px);
     height: 50px;
-    background-color: blue;
-    margin: 5px;
+    background-color: purple;
+    margin: 10px;
+}
+
+.container-center-main{
+    width: 100%;
+    height: 200px;
+    background: purple;
+}
+
+.row-center-main{
+    width: 33.5%;
+    height: 100%;
+    display: flex;
     
 }
 
-.container-nav{
-    width: 80%;
-    margin: 0 auto;
-    text-align: left;
+.col-center-main{
+    width: calc(100% / 2 - 20px);
+    height: 50px;
+    background-color: chartreuse;
+    margin: 10px;
 }
 
- .logo-smartphone{
-    display: none;
-
+.container-bottom-main{
+    width: 100%;
+    height: 200px;
+    background: purple;
+    margin-top: 210px;
 }
 
-.icons-left{
+.row-bottom-main{
+    width: 33.5%;
+    height: 100%;
+    display: flex;
     
-    margin-top: 10px;
 }
 
-span{
-    color: lightgray;
-    display: inline-block;
-    opacity: 0.5;
+.col-bottom-main{
+    width: calc(100% / 2 - 20px);
+    height: 50px;
+    background-color: chartreuse;
+    margin: 10px;
 }
+
+
+
 
 .container-playlist{
     width: 80%;
@@ -107,31 +169,15 @@ span{
     
 }
 
-h2{
-    color: white;
-    font-size: 14px;
-    margin-bottom: 10px;
-    margin-top: 30px;
-}
 
-.plus{
-    background-color: rgba(163,163,163,255);
-    width: 10%;
-    display: flex;
-    justify-content: center;
-    padding: 13px 22px;
-    
-}
 
-.name{
-    font-size: 12px;
-    font-weight: 500;
-    color: lightgray;
-    opacity: 0.5;
-    list-style-type: none;
-    margin-top: 20px;
-}
 
+
+
+.container-download-bar{
+    width: 80%;
+    margin: 0 auto;
+}
 
 
 .row-download-bar{
@@ -139,11 +185,12 @@ h2{
 }
 
 .col-download-bar{
-width: 50%;
+width: 100%;
 height: 100px;
-background-color: red;
+
 position: absolute;
 top: 320px;
+
 }
 
 .download-row{
@@ -157,6 +204,10 @@ top: 320px;
 
 
 
+
+
+
+
 @media screen and (max-width:991px) {
     
     .row-songs{
@@ -165,7 +216,7 @@ top: 320px;
     }
 
     .col-songs{
-        width: calc(100% / 4 - 10px);
+        width: calc(100% / 4 - 20px);
     }
 
     .logo-smartphone{
@@ -175,7 +226,7 @@ top: 320px;
 
 @media screen and (max-width:768px) {
     .col-songs{
-        width: calc(100% / 2 - 10px);
+        width: calc(100% / 2 - 20px);
     }
 
     .logo-smartphone{
