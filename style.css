@@ -29,7 +29,75 @@ body{
    
 }
 
+.container-img{
+    width: 80%;
+    margin: 0 auto;
+   
+}
 
+.row-img{
+    width: 100%;
+}
+
+.col-img{
+    height: 50px;
+    background-color: cornflowerblue;
+    margin-top: 20px;
+}
+
+
+.container-nav{
+    width: 80%;
+    margin: 0 auto;
+   
+}
+
+.row-nav{
+    width: 100%;
+}
+
+
+.col-nav{
+    width: 100%;
+    height: 50px;
+    background-color: cornflowerblue;
+    margin-top: 40px;
+}
+
+
+.container-playlist{
+    width: 80%;
+    margin: 0 auto;
+   
+}
+
+.row-playlist{
+    width: 100%;
+}
+
+.col-playlist{
+    width: 100%;
+    height: 50px;
+    background-color: cornflowerblue;
+    margin-top: 40px;
+}
+
+.container-download-bar{
+    width: 80%;
+    margin: 0 auto;
+   
+}
+
+.row-download-bar{
+    width: 100%;
+}
+
+.col-download-bar{
+    width: 100%;
+    height: 50px;
+    background-color: cornflowerblue;
+    margin-top: 320px;
+}
 
 .col-right{
     width: calc(100% - 225px);
@@ -70,6 +138,18 @@ body{
     position: fixed;
     z-index: 100;
     bottom: 0;
+}
+
+.row-bottom{
+    width: 100%;
+    display: flex;
+}
+
+.col-bottom{
+    width: calc(100% / 3 - 60px);
+    height: 50px;
+    background-color: red;
+    margin: 30px;
 }
 
 .main{
