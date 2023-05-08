@@ -129,11 +129,38 @@ body{
 }
 
 .col-playlist{
-    width: 100%;
-    height: 50px;
-    background-color: cornflowerblue;
-    margin-top: 55px;
+    width: 120px;
+  
+    
+    margin-top: 65px;
+    text-align: left;
 }
+
+h2{
+    color: white;
+}
+
+span{
+    color: lightgray;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+li{
+    color: lightgray;
+    font-weight: 500;
+    opacity: 0.8;
+    line-height: 2;
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+.plus{
+    background-color: lightgray;
+    
+}
+    
+
 
 .container-download-bar{
     width: 80%;
@@ -146,11 +173,23 @@ body{
 }
 
 .col-download-bar{
-    width: 100%;
+    width: 120px;
     height: 100px;
-    background-color: cornflowerblue;
+   
     position: absolute;
-    top: 403px;
+    top: 140px;
+}
+
+.hr-download{
+    margin-top: 10px;
+    border-color: lightgray;
+}
+
+.user{
+    background-color: lightgray;
+    border-radius: 50%;
+    margin-top: 20px;
+    padding: 5px;
 }
    
 
@@ -160,7 +199,22 @@ body{
     background-color: rgba(20,25,34,255);
 }
 
+.container-nav-top{
+    width: 55%;
+    margin:  0 auto;
+  
+    
+}
 
+.inline{
+    display: inline-block;
+    text-align: center;
+  margin-right: 10px;
+}
+
+.row-nav-top{
+    display: flex;
+}
 
 .header{
     width: 100%;
@@ -202,7 +256,7 @@ body{
 .col-bottom{
     width: calc(100% / 3 - 60px);
     height: 50px;
-    background-color: red;
+   
     margin: 30px;
 }
 
@@ -219,7 +273,7 @@ body{
 .container-songs{
     height: 114px;
     width: 100%;
-    background-color: blue;
+    
     margin-bottom: 160px;
 }
    
@@ -230,57 +284,68 @@ body{
     position: absolute;
     height: 99px;
     width: 100%;
-    background-color: yellow;
-    top: 0;
+   
+    top: 25;
 }
 
 .col-songs{
     width: calc(100% / 6 - 20px);
-    height: 50px;
-    background-color: purple;
+    height: 100%;
+    
     margin: 10px;
 }
 
 .container-center-main{
     width: 100%;
+    position: absolute;
+    top: 430px;
    
-    background: purple;
 }
 
 .row-center-main{
-    width: 33.5%;
+   
     height: 100%;
     display: flex;
     
 }
 
 .col-center-main{
-    width: calc(100% / 2 - 20px);
-    height: 50px;
-    background-color: chartreuse;
+   
+    height: 100px;
     margin: 10px;
+    
+}
+
+p{
+    color: grey;
+    opacity: 0.8;
+    font-weight: 600;
+}
+
+H4{
+    color: white;
 }
 
 .container-bottom-main{
     width: 100%;
-    
-    background: purple;
     margin-top: 210px;
 }
+    
+ 
 
 .row-bottom-main{
-    width: 33.5%;
     height: 100%;
     display: flex;
     
 }
+   
 
 .col-bottom-main{
-    width: calc(100% / 2 - 20px);
-    height: 50px;
-    background-color: chartreuse;
+    
     margin: 10px;
-}
+    height: 100px;
+    
+  }
 
 
 
@@ -297,12 +362,13 @@ body{
     flex-direction: column;
 }
 
-.col-playlist{
-    text-align: left;
-   
-    
-}
 
+
+.h2-playlist{
+    color: white;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
 
 
 
@@ -318,7 +384,13 @@ body{
     position: relative;
 }
 
-
+.download{
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid grey;
+    padding: 3px;
+    color: white;
+}
 
 
 
@@ -330,15 +402,125 @@ body{
     height: 20px;
     text-align: center;
     border: 1px solid grey;
+    
 }
 
 
+h5{
+    display: inline-block;
+    position: absolute;
+    top: 50px;
+}
 
+.nome-brano{
+    font-size: 10px;
+    position: absolute;
+    bottom: 33px;
+}
+
+
+.heart{
+    position: absolute;
+    bottom: 45px;
+    left: 195px;
+    color:lightgray;
+    opacity: 0.8;
+   
+}
+
+.holder{
+    position: absolute;
+    top: 50px;
+    left: 230px;
+    color:lightgray;
+    opacity: 0.8;
+}
+
+.margin{
+    margin-right: 20px;
+   
+}
+
+.col-bottom-2{
+    text-align: center;
+}
+
+.time-song{
+    width: 80%;
+    height: 2px;
+    margin: 0 auto;
+    background-color: gray;
+    margin-top: 10px;
+    margin-left: 32px;
+}
+
+.line-white{
+    width: 20%;
+    height: 2px;
+    background-color: white;
+}
+
+.time-left{
+    color: white;
+    position: absolute;
+    top: 52px;
+    left: 650px;
+    font-size: 10px;
+}
+    
+.time-right{
+    color: white;
+    position: absolute;
+    top: 52px;
+    right: 700px;
+    font-size: 10px;
+}
+
+.col-bottom-3{
+    text-align: center;
+  
+}
+
+.line-volume{
+    width: 5%;
+    height: 2px;
+    position: absolute;
+    
+    top: 38px;
+    right: 125px;
+    background-color: grey;
+}
+
+.line-white-volume{
+    width: 30%;
+    height: 2px;
+    background-color: white;
+}
 
 @media screen and (max-width:2000px){
    
     .col-left{
         width: 140px;
+        height: 91vh;
+    }
+
+    
+
+    .main{
+        height: 82vh;
+    }
+
+    .container-bottom-main {
+       
+        position: absolute;
+        top: 340px;
+    }
+    
+
+    .container-center-main{
+        
+        top: 300px;
+       
     }
 
     .logo-smartphone{
@@ -372,17 +554,25 @@ body{
         right: 0;
     }
 
+    .container-center-main{
+        top: 360px;
+    }
+
     .main{
         height: 77vh;
     }
 
-    .col-left{
-        width: 140px;
+    .container-nav-top{
+        width: 80%;
+        text-align: center;
+        margin:  0 auto;
+       
+        
     }
 
     .col-left{
         height: 88vh;
-        width: 130px;
+        width: 140px;
     }
 
     
@@ -419,23 +609,33 @@ body{
         height: 77vh;
     }
 
+    .container-nav-top{
+        width: 100%;
+        text-align: center;
+        margin:  0 auto;
+       
+        
+    }
+
     .container-songs{
         margin-bottom: 240px;
     }
-    .container-bottom-main{
-        margin-top: 130px;
-    }
+    
+    
     .col-left{
-        height: 90vh;
-        width: 130px;
+        height: 89.3vh;
+        width: 140px;
     }
 
-    .col-left{
-        width: 140px;
+    .container-center-main{
+        
+        top: 435px;
+       
     }
     
     .col-songs{
         width: calc(100% / 2 - 20px);
+        margin: 4px;
     }
 
     .logo-smartphone{
@@ -460,6 +660,20 @@ body{
         z-index: 100;
     }
 
+    .inline{
+        font-size: 13px;
+    }
+
+    .container-nav-top{
+        width: 95%;
+        position: absolute;
+        top: 100px;
+    }
+
+   
+
+    
+
     .button-header{
         width: 60%;
     }
@@ -471,6 +685,31 @@ body{
 
     .text{
         display: none;
+    }
+    .text-1{
+        display: none;
+    }
+    .text-2{
+        display: none;
+    }
+    .text-3{
+        display: none;
+    }
+
+    li{
+        display: none;
+    }
+
+    span{
+        display: none;
+    }
+
+    .col-playlist{
+        display: none;
+    }
+
+    .col-download-bar{
+        top: 530px;
     }
 
     .main{
@@ -490,20 +729,20 @@ body{
 
     .container-center-main{
         position: absolute;
-        top: 415px;
+        top: 500px;
     }
 
 
     .container-bottom-main{
         position: absolute;
-        top: 523px;
+        top: 450px;
         
 
     }
 
     .row-songs{
         position: absolute;
-        top: 100px;
+        top: 175px;
 
     }
 
